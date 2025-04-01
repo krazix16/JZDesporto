@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrindo no Chrome...</title>
+    <title>Redirecionando...</title>
     <script>
-        window.location.href = "googlechrome://https://JZDesporto.kyte.site";
+        function openExternal() {
+            var url = "https://JZDesporto.kyte.site";
+            window.open(url, "_blank");
+        }
+        setTimeout(openExternal, 1000);
     </script>
 </head>
 <body>
-    <p>Se não abrir automaticamente, <a href="googlechrome://https://JZDesporto.kyte.site">clique aqui para abrir no Chrome</a>.</p>
+    <h2>Abrindo no navegador...</h2>
+    <p>Se não abrir automaticamente, <a href="https://JZDesporto.kyte.site" target="_blank">clique aqui</a>.</p>
 </body>
 </html>
-``
+```
